@@ -9,7 +9,7 @@ else{
 
     notasDisponiveis.sort((a, b) => b - a);
 
-    console.log(`Saque solicitado: GC$ ${valorSaque},00`)
+    console.log(`Saque solicitado: GC$ ${valorSaque.toFixed(2)}`)
 
     notasDisponiveis.forEach(nota => {
         let quantidadeNotas = Math.floor(valorSaque / nota);
@@ -17,7 +17,7 @@ else{
         valorSaque = valorSaque % nota;
 
         if(quantidadeNotas > 0){
-        console.log(`GC$ ${nota},00 -> ${quantidadeNotas}`);
+        console.log(`GC$ ${nota.toFixed(2)} -> ${quantidadeNotas}`);
         }
 })
 }
