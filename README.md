@@ -57,7 +57,7 @@ O próximo passo, é atualizar a variável valorSaque com o resto da divisão. A
 ```javascript
 
 if (quantidadeNotas > 0) {
-    console.log(`GC$ ${nota},00 -> ${quantidadeNotas}`);
+    console.log(`GC$ ${nota.toFixed(2)} -> ${quantidadeNotas}`);
 }
 ```
 O sistema só mostra no console as notas que realmente foram usadas (quantidade maior que 0), com a intenção de entregar uma experiência mais limpa para o usuário.
